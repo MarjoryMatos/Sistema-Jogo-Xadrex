@@ -1,20 +1,20 @@
 package boardgame;
 
 public class Position {
-    private int now;
+    private int row;
     private int column;
 
-    public Position(int now, int column) {
-        this.now = now;
+    public Position(int row, int column) {
+        this.row = row;
         this.column = column;
     }
 
-    public int getNow() {
-        return now;
+    public int getRow() {
+        return row;
     }
 
-    public void setNow(int now) {
-        this.now = now;
+    public void setRow(int row) {
+        this.row = row;
     }
 
     public int getColumn() {
@@ -28,7 +28,7 @@ public class Position {
     @Override
     public String toString() {
         return "Position{" +
-                "now=" + now +
+                "now=" + row +
                 ", column=" + column +
                 '}';
     }
